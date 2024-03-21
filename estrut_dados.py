@@ -18,3 +18,5 @@ df = pd.DataFrame({'Frutas': [preco for sublist in text_list_preco for preco in 
 
 resumo = 'list_nomes.csv'
 df.to_csv(resumo, index=False)
+
+print(text_list_preco)

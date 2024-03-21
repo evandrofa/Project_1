@@ -16,8 +16,8 @@ for i in range(1, 10):
     text_list_preco.append([texto.text for texto in lista_preco])
     text_list_praca.append([texto.text for texto in lista_pracas])
 
-print(text_list_preco)
-print(text_list_praca)
+# print(text_list_preco)
+# print(text_list_praca)
 
 df = pd.DataFrame({'Preço': [preco for sublist in text_list_preco for preco in sublist], 'Local': [local for sublist in text_list_praca for local in sublist]})
 
@@ -28,3 +28,10 @@ df.to_csv(resumo, index=False)
 
 #let test = document.querySelector(`div:nth-child(4)  div.info  h2  a`).innerText
 #console.log(test)
+
+abacate = []
+for x in text_list_praca:
+    abacate.append(x[0])
+
+for y in abacate:
+    print(y)
