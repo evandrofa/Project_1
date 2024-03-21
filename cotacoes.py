@@ -29,12 +29,11 @@ df.to_csv(resumo, index=False)
 #let test = document.querySelector(`div:nth-child(4)  div.info  h2  a`).innerText
 #console.log(test)
 
-abacate = []
+maca_fuji = []
 for x in text_list_praca:
     try:
-        abacate.append(x[indices.maca_fuji_indice])
+        maca_fuji.append(x[indices.maca_fuji_indice])
     except:
         pass
     
-for y in abacate:
-    print(y)
+print(maca_fuji)

@@ -1,3 +1,4 @@
+#tamanho das listas
 abacate = 9
 abacaxi = 6
 mamao = 9
@@ -11,6 +12,8 @@ limao = 11
 maca_fuji = 3
 maca_gala = 3
 
+
+# indices que estao os dados nos arrays
 abacate_indice = 0
 abacaxi_indice = 1
 mamao_indice = 2
