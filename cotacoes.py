@@ -24,7 +24,10 @@ for i in range(13):
 # print(text_list_praca)
 
 
-df = pd.DataFrame({'Preço': [preco for sublist in text_list_preco for preco in sublist], 'Local': [local for sublist in text_list_praca for local in sublist],   'Índice': [indice for sublist in text_list_indice for indice in sublist]})
+df = pd.DataFrame({
+                'Preço': [preco for sublist in text_list_preco for preco in sublist],
+                'Local': [local for sublist in text_list_praca for local in sublist],
+                'Índice': [indice for sublist in text_list_indice for indice in sublist]})
 
 # Salvar o DataFrame como um arquivo CSV
 resumo = 'dados_frutas.csv'

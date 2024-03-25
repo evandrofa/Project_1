@@ -9,41 +9,26 @@ arquivo = open(arquivo, 'r', newline='')
 with open('dados_frutas.csv', encoding='utf-8') as arquivo:
     dados = arquivo.readlines()
 
-linhas = []
-for linha in dados:
-    linhas.append(linha.replace(",",".",1).replace("\n",'').split(','))
-
-for l in linhas:
-    print(l)
 
 
+# linhas = []
+# for i in dados:
+#     linhas.append(i.replace(",",".", 1).replace('\n', '').split())
 
+# print(linhas)
 
-names =[
-'abacaxi',
-'mamao',
-'maracuja',
-'pera',
-'tangerina',
-'uva',
-'melancia',
-'banana',
-'limao',
-'maca_fuji',
-'maca_gala'
-]
+# for x in linhas:
+#     print(x)
 
-indices = {
-'abacate_indice': 0,
-'abacaxi_indice': 1,
-'mamao_indice': 2,
-'maracuja_indice': 3,
-'pera_indice': 4,
-'tangerina_indice': 5,
-'uva_indice': 6,
-'melancia_indice': 7,
-'banana_indice': 8,
-'limao_indice': 9,
-'maca_fuji_indice': 10,
-'maca_gala_indice': 11
-}
+abacate = [2,14,26,38,48,58,68,77,86]
+new_abacate = []
+
+for indice, linha in enumerate(dados, start=1):
+    # Verificando se o índice da linha está na lista de linhas para selecionar
+    if indice in abacate:
+        # Adicionando a linha selecionada à lista
+        new_abacate.append(linha.split())
+
+# print(abacate)
+for x in new_abacate:
+    print(x)
