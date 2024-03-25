@@ -26,3 +26,28 @@ banana_indice = 8
 limao_indice = 9
 maca_fuji_indice = 10
 maca_gala_indice = 11
+
+
+
+
+names = [
+'abacate',
+'abacaxi',
+'mamao',
+'maracuja',
+'pera',
+'tangerina',
+'uva',
+'melancia',
+'banana',
+'limao',
+'maca_fuji',
+'maca_gala'
+]
+
+
+new_dict = {
+    'abacate': 0,
+    'maca': 0
+
+}

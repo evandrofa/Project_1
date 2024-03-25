@@ -20,3 +20,5 @@ resumo = 'list_nomes.csv'
 df.to_csv(resumo, index=False)
 
 print(text_list_preco)
+
+
