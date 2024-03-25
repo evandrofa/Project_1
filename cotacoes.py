@@ -17,7 +17,7 @@ for i in range(13):
     lista_pracas = browser.find_elements(By.CSS_SELECTOR, f'.tables .cotacao .table-content .cot-fisicas tbody tr:nth-child({i}) td:nth-child(1)')
     text_list_preco.append([texto.text for texto in lista_preco])
     text_list_praca.append([texto.text for texto in lista_pracas])
-    text_list_indice.append([i] * len(lista_preco))  # Adiciona o índice atual a cada item na lista de índices
+
 
 
 # print(text_list_preco)
@@ -25,9 +25,9 @@ for i in range(13):
 
 
 df = pd.DataFrame({
-                'Preço': [preco for sublist in text_list_preco for preco in sublist],
                 'Local': [local for sublist in text_list_praca for local in sublist],
-                'Índice': [indice for sublist in text_list_indice for indice in sublist]})
+                'Preço': [preco for sublist in text_list_preco for preco in sublist]
+                })
 
 # Salvar o DataFrame como um arquivo CSV
 resumo = 'dados_frutas.csv'

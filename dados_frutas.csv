@@ -1,99 +1,99 @@
-Preço,Local,Índice
-***,Ceasa Campinas/SP,1
-***,Ceasa Campinas/SP,1
-***,Ceasa Campinas/SP,1
-***,Ceasa Campinas/SP,1
-***,Ceasa Campinas/SP,1
-***,Ceasa Campinas/SP,1
-***,Ceasa Campinas/SP,1
-***,Ceasa - Campinas/SP,1
-***,Ceasa - Campinas/SP,1
-***,Ceasa - Campinas/SP,1
-"8,33",Ceasa - Campinas/SP (CAT 1 T 150-180),1
-"7,22",Ceasa - Campinas/SP (CAT 1 T 150-180),1
-"10,83",Avocado,2
-"4,03",Pérola-Graúdo / Kg,2
-"7,50",Formosa-Extra,2
-"8,18",Azedo-Extra,2
-s/ cotação,Pack Triumph,2
-s/ cotação,Murcott,2
-"13,75",Itália-Extra,2
-"2,60",Redonda Graúda,2
-"5,33",Nanica-Extra,2
-"2,50",Extra,2
-"7,66",Ceasa - Belo Horizonte/MG(T.120-150),2
-"7,77",Ceasa - Belo Horizonte/MG (T.120-150),2
-s/ cotação,Breda,3
-***,Ceasa Belo Horizonte/MG,3
-"10,00",Havaiano-Golden (T 15-21),3
-"20,00",Doce (T 06-15),3
-"8,33",Williams,3
-"5,88",Ponkan (T. 7-9 DZ),3
-"11,00",Niágara-Extra,3
-"2,40",Redonda Média,3
-"8,67",Prata-Extra,3
-"1,75",Especial,3
-"8,05",Ceagesp/SP (110-135 FRUTOS),3
-"7,55",Ceagesp/SP (110-135 FRUTOS),3
-***,Ceasa Belo Horizonte/MG,4
-s/ cotação,Pérola Médio MG / Dz,4
-***,Ceasa Belo Horizonte/MG,4
-***,Ceasa Belo Horizonte/MG,4
-***,Ceasa Belo Horizonte/MG,4
-***,Ceasa Belo Horizonte/MG,4
-***,Ceasa Belo Horizonte/MG,4
-"2,20",Redonda Miúda,4
-***,Ceasa - Belo Horizonte/MG,4
-"1,25",Primeira,4
-s/ cotação,Comum Extra,5
-***,Ceagesp/SP,5
-"4,16",Formosa Extra,5
-"3,75",Azedo Extra AAA,5
-s/ cotação,Pack Triumph,5
-s/ cotação,Murcott Graúda,5
-"14,37",Itália,5
-***,Ceasa - Belo Horizonte/MG,5
-"3,00",Nanica Climatizada 1ª,5
-***,Ceasa - Belo Horizonte/MG,5
-s/ cotação,Comum Especial,6
-"6,81",Pérola - (08 Frutos) / Un.,6
-"6,25",Haway Extra,6
-"25,00",Doce,6
-"7,50",Williams,6
-"5,00",Ponkan Graúda,6
-"12,00",Niágara,6
-s/ cotação,Redonda Graúda,6
-"6,00",Prata Climatizada 1ª,6
-"2,50",Extra,6
-***,Ceagesp/SP,7
-***,Ceagesp/SP,7
-***,Ceagesp/SP,7
-***,Ceagesp/SP,7
-***,Ceagesp/SP,7
-***,Ceagesp/SP,7
-"2,20",Redonda Média,7
-***,Ceagesp/SP,7
-"2,00",Especial,7
-"8,30",Avocado/ Hass/ Fuerte A,8
-"5,45",Formosa (05 a 09 Frutos),8
-"6,13",Azedo 4A,8
-s/ cotação,Pack Triumph (80 A 100 FRUTOS),8
-s/ cotação,Murcott (03 a 04 DZ),8
-"9,56",Niágara A,8
-"1,80",Redonda Miúda,8
-"4,32",Nanica 1ª,8
-***,Ceagesp/SP,8
-s/ cotação,Breda (Boca 8 a 11),9
-"6,16",Havaí (15 a 18 Frutos),9
-"9,54",Doce (10 a 15 frutos),9
-"7,20",Williams (80 A 100 FRUTOS),9
-"5,15",Ponkan (02 a 04 DZ),9
-"13,30",Itália A,9
-***,Ceagesp/SP,9
-"6,53",Prata/SP 1ª,9
-"2,56",15 a 18 DZ,9
-"2,53",Redonda Graúda,10
-"2,16",21 a 27 DA,10
-"1,96",Redonda Média,11
-"1,65",Acima de 31 DZ,11
-"1,49",Redonda Miúda,12
+Local,Preço
+Ceasa Campinas/SP,***
+Ceasa Campinas/SP,***
+Ceasa Campinas/SP,***
+Ceasa Campinas/SP,***
+Ceasa Campinas/SP,***
+Ceasa Campinas/SP,***
+Ceasa Campinas/SP,***
+Ceasa - Campinas/SP,***
+Ceasa - Campinas/SP,***
+Ceasa - Campinas/SP,***
+Ceasa - Campinas/SP (CAT 1 T 150-180),"8,33"
+Ceasa - Campinas/SP (CAT 1 T 150-180),"7,22"
+Avocado,"10,83"
+Pérola-Graúdo / Kg,"4,03"
+Formosa-Extra,"7,50"
+Azedo-Extra,"8,18"
+Pack Triumph,s/ cotação
+Murcott,s/ cotação
+Itália-Extra,"13,75"
+Redonda Graúda,"2,60"
+Nanica-Extra,"5,33"
+Extra,"2,50"
+Ceasa - Belo Horizonte/MG(T.120-150),"7,66"
+Ceasa - Belo Horizonte/MG (T.120-150),"7,77"
+Breda,s/ cotação
+Ceasa Belo Horizonte/MG,***
+Havaiano-Golden (T 15-21),"10,00"
+Doce (T 06-15),"20,00"
+Williams,"8,33"
+Ponkan (T. 7-9 DZ),"5,88"
+Niágara-Extra,"11,00"
+Redonda Média,"2,40"
+Prata-Extra,"8,67"
+Especial,"1,75"
+Ceagesp/SP (110-135 FRUTOS),"8,05"
+Ceagesp/SP (110-135 FRUTOS),"7,55"
+Ceasa Belo Horizonte/MG,***
+Pérola Médio MG / Dz,s/ cotação
+Ceasa Belo Horizonte/MG,***
+Ceasa Belo Horizonte/MG,***
+Ceasa Belo Horizonte/MG,***
+Ceasa Belo Horizonte/MG,***
+Ceasa Belo Horizonte/MG,***
+Redonda Miúda,"2,20"
+Ceasa - Belo Horizonte/MG,***
+Primeira,"1,25"
+Comum Extra,s/ cotação
+Ceagesp/SP,***
+Formosa Extra,"4,16"
+Azedo Extra AAA,"3,75"
+Pack Triumph,s/ cotação
+Murcott Graúda,s/ cotação
+Itália,"14,37"
+Ceasa - Belo Horizonte/MG,***
+Nanica Climatizada 1ª,"3,00"
+Ceasa - Belo Horizonte/MG,***
+Comum Especial,s/ cotação
+Pérola - (08 Frutos) / Un.,"6,81"
+Haway Extra,"6,25"
+Doce,"25,00"
+Williams,"7,50"
+Ponkan Graúda,"5,00"
+Niágara,"12,00"
+Redonda Graúda,s/ cotação
+Prata Climatizada 1ª,"6,00"
+Extra,"2,50"
+Ceagesp/SP,***
+Ceagesp/SP,***
+Ceagesp/SP,***
+Ceagesp/SP,***
+Ceagesp/SP,***
+Ceagesp/SP,***
+Redonda Média,"2,20"
+Ceagesp/SP,***
+Especial,"2,00"
+Avocado/ Hass/ Fuerte A,"8,30"
+Formosa (05 a 09 Frutos),"5,45"
+Azedo 4A,"6,13"
+Pack Triumph (80 A 100 FRUTOS),s/ cotação
+Murcott (03 a 04 DZ),s/ cotação
+Niágara A,"9,56"
+Redonda Miúda,"1,80"
+Nanica 1ª,"4,32"
+Ceagesp/SP,***
+Breda (Boca 8 a 11),s/ cotação
+Havaí (15 a 18 Frutos),"6,16"
+Doce (10 a 15 frutos),"9,54"
+Williams (80 A 100 FRUTOS),"7,20"
+Ponkan (02 a 04 DZ),"5,15"
+Itália A,"13,30"
+Ceagesp/SP,***
+Prata/SP 1ª,"6,53"
+15 a 18 DZ,"2,56"
+Redonda Graúda,"2,53"
+21 a 27 DA,"2,16"
+Redonda Média,"1,96"
+Acima de 31 DZ,"1,65"
+Redonda Miúda,"1,49"

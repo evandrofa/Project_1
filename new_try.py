@@ -27,7 +27,7 @@ for indice, linha in enumerate(dados, start=1):
     # Verificando se o índice da linha está na lista de linhas para selecionar
     if indice in abacate:
         # Adicionando a linha selecionada à lista
-        new_abacate.append(linha.split())
+        new_abacate.append(linha)
 
 # print(abacate)
 for x in new_abacate:
