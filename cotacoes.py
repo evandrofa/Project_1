@@ -7,15 +7,6 @@ browser = webdriver.Chrome()
 url = 'https://www.noticiasagricolas.com.br/cotacoes/frutas'
 browser.get(url)
 
-# text_list_preco = []
-# text_list_praca = []
-# text_list_indice = []
-
-# for i in range(13):
-#     lista_preco = browser.find_elements(By.CSS_SELECTOR, f'.tables .cotacao .table-content .cot-fisicas tbody tr:nth-child({i}) td:nth-child(2)')
-#     lista_pracas = browser.find_elements(By.CSS_SELECTOR, f'.tables .cotacao .table-content .cot-fisicas tbody tr:nth-child({i}) td:nth-child(1)')
-#     text_list_preco.append([texto.text for texto in lista_preco])
-#     text_list_praca.append([texto.text for texto in lista_pracas])
 
 txt_lista_nomes = []
 txt_lista_precos = []
@@ -30,8 +21,9 @@ def search_bot(tam:int,id:int):
     return txt_lista_nomes, txt_lista_precos
 
 # abacate = search_bot(10, 189)
-abacaxi = search_bot(7, 190)
-print(abacaxi)
+# abacaxi = search_bot(7, 190)
+pera = search_bot(10, 193)
+print(pera)
 
 
 
