@@ -1,7 +1,3 @@
-import os
-import glob
-
-
 arquivo = 'dados_frutas.csv'
 arquivo = open(arquivo, 'r', newline='')
 
@@ -9,16 +5,6 @@ arquivo = open(arquivo, 'r', newline='')
 with open('dados_frutas.csv', encoding='utf-8') as arquivo:
     dados = arquivo.readlines()
 
-
-
-# linhas = []
-# for i in dados:
-#     linhas.append(i.replace(",",".", 1).replace('\n', '').split())
-
-# print(linhas)
-
-# for x in linhas:
-#     print(x)
 
 abacate = [2,14,26,38,48,58,68,77,86]
 new_abacate = []
