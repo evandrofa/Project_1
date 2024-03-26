@@ -23,10 +23,11 @@ opa = {}
 
 txt_lista_nomes = []
 txt_lista_precos = []
-pracas_nomes = browser.find_elements(By.CSS_SELECTOR, 'table#\\"anchor\\"189.cot-fisicas tr td:nth-child(1)')
-precos_produto = browser.find_elements(By.CSS_SELECTOR, 'table#\\"anchor\\"189.cot-fisicas tr td:nth-child(2)')
-txt_lista_nomes.append([elemento.text for elemento in pracas_nomes])
-txt_lista_precos.append([elemento.text for elemento in precos_produto])
+for i in range(1,10):
+    pracas_nomes = browser.find_elements(By.CSS_SELECTOR, f'table#\\"anchor\\"189.cot-fisicas tbody tr:nth-child({i}) td:nth-child(1)')
+    precos_produto = browser.find_elements(By.CSS_SELECTOR, f'table#\\"anchor\\"189.cot-fisicas tbody tr:nth-child({i}) td:nth-child(2)') 
+    txt_lista_nomes.append([elemento.text for elemento in pracas_nomes])
+    txt_lista_precos.append([elemento.text for elemento in precos_produto])
 
 # for i in txt_lista_nomes:
 #     print(i)
@@ -37,20 +38,23 @@ txt_lista_precos.append([elemento.text for elemento in precos_produto])
 
 txt_lista_nomes = [str(item) for item in txt_lista_nomes]
 txt_lista_precos = [str(item) for item in txt_lista_precos]
-opa = dict(zip(txt_lista_nomes, txt_lista_precos))
-print(opa)
 
+print(txt_lista_nomes)
+print(txt_lista_precos)
+
+# opa = dict(zip(txt_lista_nomes, txt_lista_precos))
+# print(opa)
 
 # # print(text_list_preco)
 # # print(text_list_praca)
 
 
 # df = pd.DataFrame({
-#                 'Local': [local for sublist in text_list_praca for local in sublist],
-#                 'Preço': [preco for sublist in text_list_preco for preco in sublist]
+#                 'Local': [local for sublist in txt_lista_nomes for local in sublist],
+#                 'Preço': [preco for sublist in txt_lista_precos for preco in sublist]
 #                 })
 
-# Salvar o DataFrame como um arquivo CSV
+# # Salvar o DataFrame como um arquivo CSV
 # resumo = 'dados_frutas.csv'
 # df.to_csv(resumo, index=False)
 
