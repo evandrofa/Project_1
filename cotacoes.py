@@ -18,6 +18,9 @@ text_list_indice = []
 #     text_list_preco.append([texto.text for texto in lista_preco])
 #     text_list_praca.append([texto.text for texto in lista_pracas])
 
+
+opa = {}
+
 txt_lista_nomes = []
 txt_lista_precos = []
 pracas_nomes = browser.find_elements(By.CSS_SELECTOR, 'table#\\"anchor\\"189.cot-fisicas tr td:nth-child(1)')
@@ -25,16 +28,17 @@ precos_produto = browser.find_elements(By.CSS_SELECTOR, 'table#\\"anchor\\"189.c
 txt_lista_nomes.append([elemento.text for elemento in pracas_nomes])
 txt_lista_precos.append([elemento.text for elemento in precos_produto])
 
-for i in txt_lista_nomes:
-    print(i)
+# for i in txt_lista_nomes:
+#     print(i)
 
-for x in txt_lista_precos:
-    print(x)
-
-
+# for x in txt_lista_precos:
+#     print(x)
 
 
-
+txt_lista_nomes = [str(item) for item in txt_lista_nomes]
+txt_lista_precos = [str(item) for item in txt_lista_precos]
+opa = dict(zip(txt_lista_nomes, txt_lista_precos))
+print(opa)
 
 
 # # print(text_list_preco)
