@@ -19,15 +19,24 @@ browser.get(url)
 
 txt_lista_nomes = []
 txt_lista_precos = []
-for i in range(1,10):
-    pracas_nomes = browser.find_elements(By.CSS_SELECTOR, f'table#\\"anchor\\"189.cot-fisicas tbody tr:nth-child({i}) td:nth-child(1)')
-    precos_produto = browser.find_elements(By.CSS_SELECTOR, f'table#\\"anchor\\"189.cot-fisicas tbody tr:nth-child({i}) td:nth-child(2)') 
-    txt_lista_nomes.append([elemento.text for elemento in pracas_nomes])
-    txt_lista_precos.append([elemento.text for elemento in precos_produto])
+fruta = []
+
+def search_bot(tam:int,id:int):
+    for i in range(1,tam):
+        pracas_nomes = browser.find_elements(By.CSS_SELECTOR, f'table#\\"anchor\\"{id}.cot-fisicas tbody tr:nth-child({i}) td:nth-child(1)')
+        precos_produto = browser.find_elements(By.CSS_SELECTOR, f'table#\\"anchor\\"{id}.cot-fisicas tbody tr:nth-child({i}) td:nth-child(2)') 
+        txt_lista_nomes.append([elemento.text for elemento in pracas_nomes])
+        txt_lista_precos.append([elemento.text for elemento in precos_produto])
+    return txt_lista_nomes, txt_lista_precos
+
+# abacate = search_bot(10, 189)
+abacaxi = search_bot(7, 190)
+print(abacaxi)
 
 
-print(txt_lista_nomes)
-print(txt_lista_precos)
+
+# print(txt_lista_nomes)
+# print(txt_lista_precos)
 
 
 # df = pd.DataFrame({
