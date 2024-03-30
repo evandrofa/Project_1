@@ -22,8 +22,9 @@ def search_bot(tam:int,id:int):
 
 # abacate = search_bot(10, 189)
 # abacaxi = search_bot(7, 190)
-pera = search_bot(10, 193)
-print(pera)
+pera_praca, pera_valor = search_bot(10, 193)
+print(pera_praca)
+print(pera_valor)
 
 
 
