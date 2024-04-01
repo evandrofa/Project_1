@@ -28,16 +28,12 @@ print(pera_valor)
 
 
 
-# print(txt_lista_nomes)
-# print(txt_lista_precos)
+df = pd.DataFrame({
+                'Pera Praça': [pera for sublist in pera_praca for pera in sublist],
+                'Pera Preço': [pera_valor for sublist in pera_valor for pera_valor in sublist]
+                })
 
-
-# df = pd.DataFrame({
-#                 'Local': [local for sublist in txt_lista_nomes for local in sublist],
-#                 'Preço': [preco for sublist in txt_lista_precos for preco in sublist]
-#                 })
-
-# # Salvar o DataFrame como um arquivo CSV
-# resumo = 'dados_frutas.csv'
-# df.to_csv(resumo, index=False)
+# Salvar o DataFrame como um arquivo CSV
+resumo = 'dados_frutas.csv'
+df.to_csv(resumo, index=False)
 
