@@ -32,6 +32,17 @@ def search_bot(tam:int,id:int):
 
 # abacate = search_bot(10, 189)
 # abacaxi = search_bot(7, 190)
+# mamao = search_bot(10 ,191)
+# maracuja = search_bot(10, 192)
+# pera = search_bot(10, 193)
+# tangerina = search_bot(10, 195)
+# uva = search_bot(10, 194)
+# melancia = search_bot(13, 89)
+# banana_nanica_prata = search_bot(10, 68)
+# limao_tahiti = search_bot(12, 72)
+# maca_fuji = search_bot(4, 73)
+# maca_gala = search_bot(4, 74)
+
 pera_praca, pera_valor = search_bot(10, 193)
 print(pera_praca)
 print(pera_valor)
