@@ -4,13 +4,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 import time
 
-# Configurações para o navegador Chrome em modo headless
+# Config para nao abrir navegador
 chrome_options = Options()
 chrome_options.add_argument('--headless')  # Executar em modo headless (sem abrir a janela do navegador)
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 
-# Inicializa o driver do navegador Chrome com as opções configuradas
 browser = webdriver.Chrome(options=chrome_options)
 
 # browser = webdriver.Chrome()
