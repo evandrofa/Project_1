@@ -23,8 +23,8 @@ def search_bot(tam:int,id:int):
     for i in range(1,tam):
         pracas_nomes = browser.find_elements(By.CSS_SELECTOR, f'table#\\"anchor\\"{id}.cot-fisicas tbody tr:nth-child({i}) td:nth-child(1)')
         precos_produto = browser.find_elements(By.CSS_SELECTOR, f'table#\\"anchor\\"{id}.cot-fisicas tbody tr:nth-child({i}) td:nth-child(2)') 
-        txt_lista_nomes.append([elemento.text for elemento in pracas_nomes])
-        txt_lista_precos.append([elemento.text for elemento in precos_produto])
+        txt_lista_nomes.extend([elemento.text for elemento in pracas_nomes])
+        txt_lista_precos.extend([elemento.text for elemento in precos_produto])
     return txt_lista_nomes, txt_lista_precos
 
 frutas = {
@@ -41,10 +41,10 @@ frutas = {
     'maca_fuji': [search_bot(4, 73)],
     'maca_gala': [search_bot(4, 74)]
 }
+
 for fruta, resultado in frutas.items():
     local, preco = resultado[0]  # Extrair os resultados
     df = pd.DataFrame({'Local': local, 'Preço': preco})
-    
     # Salvar em um arquivo CSV separado
     local_salvar = os.path.join('data', fruta + '_data.csv')
     df.to_csv(local_salvar, index=False)
