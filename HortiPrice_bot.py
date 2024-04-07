@@ -46,6 +46,7 @@ def answer(callback):
             for i in range(len(abacate_dados)):
                 mensagem = f"{abacate_dados['Local'].iloc[i]} : {abacate_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
+            bot.send_message(callback.message.chat.id, '-' *40)
 
         elif callback.data == 'abacaxi':
             bot.send_message(callback.message.chat.id, 'Cotação do Abacaxi')
