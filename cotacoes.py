@@ -3,7 +3,10 @@ import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-import time
+from datetime import date
+
+data_hoje = date.today()
+data_formatada = data_hoje.strftime("%d/%m/%Y")
 
 # Config para nao abrir navegador
 chrome_options = Options()
