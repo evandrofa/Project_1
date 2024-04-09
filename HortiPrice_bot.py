@@ -1,6 +1,7 @@
 import pandas as pd
 import telebot
 from telebot import types
+from cotacoes import data_formatada
 
 
 abacate_dados = pd.read_csv('data/abacate_data.csv')
@@ -44,14 +45,14 @@ def question(message):
 def answer(callback):
     if callback.message:
         if callback.data == 'abacate':
-            bot.send_message(callback.message.chat.id, "🥑Cotação do Abacate🥑")
+            bot.send_message(callback.message.chat.id, f"🥑Cotação do Abacate🥑 Data: {data_formatada}")
             for i in range(len(abacate_dados)):
                 mensagem = f"{abacate_dados['Local'].iloc[i]} : {abacate_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
             bot.send_message(callback.message.chat.id, '-' *40)
 
         elif callback.data == 'abacaxi':
-            bot.send_message(callback.message.chat.id, '🍍Cotação do Abacaxi🍍')
+            bot.send_message(callback.message.chat.id, f'🍍Cotação do Abacaxi🍍 Data: {data_formatada}')
             for i in range(len(abacaxi_dados)):
                 mensagem = f"{abacaxi_dados['Local'].iloc[i]} : {abacaxi_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
@@ -59,70 +60,70 @@ def answer(callback):
 
 
         elif callback.data == 'banana':
-            bot.send_message(callback.message.chat.id, '🍌Cotação da Banana🍌')
+            bot.send_message(callback.message.chat.id, f'🍌Cotação da Banana🍌 Data: {data_formatada}')
             for i in range(len(banana_dados)):
                 mensagem = f"{banana_dados['Local'].iloc[i]} : {banana_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
             bot.send_message(callback.message.chat.id, '-' *40)
 
         elif callback.data == 'limao_tahiti':
-            bot.send_message(callback.message.chat.id, '🍋Cotação do Limao Tahiti🍋')
+            bot.send_message(callback.message.chat.id, f'🍋Cotação do Limao Tahiti🍋 Data: {data_formatada}')
             for i in range(len(limao_tahiti_dados)):
                 mensagem = f"{limao_tahiti_dados['Local'].iloc[i]} : {limao_tahiti_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
             bot.send_message(callback.message.chat.id, '-' *40)
 
         elif callback.data == 'maca_fuji':
-            bot.send_message(callback.message.chat.id, '🍎Cotação da Maça Fuji🍎')
+            bot.send_message(callback.message.chat.id, f'🍎Cotação da Maça Fuji🍎 Data: {data_formatada}')
             for i in range(len(maca_fuji_dados)):
                 mensagem = f"{maca_fuji_dados['Local'].iloc[i]} : {maca_fuji_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
             bot.send_message(callback.message.chat.id, '-' *40)
 
         elif callback.data == 'maca_gala':
-            bot.send_message(callback.message.chat.id, '🍎Cotação da Maça🍎')
+            bot.send_message(callback.message.chat.id, f'🍎Cotação da Maça🍎 Data: {data_formatada}')
             for i in range(len(maca_gala_dados)):
                 mensagem = f"{maca_gala_dados['Local'].iloc[i]} : {maca_gala_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
             bot.send_message(callback.message.chat.id, '-' *40)
 
         elif callback.data == 'mamao':
-            bot.send_message(callback.message.chat.id, '🥭Cotação do Mamão🥭')
+            bot.send_message(callback.message.chat.id, f'🥭Cotação do Mamão🥭 Data: {data_formatada}')
             for i in range(len(mamao_dados)):
                 mensagem = f"{mamao_dados['Local'].iloc[i]} : {mamao_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
             bot.send_message(callback.message.chat.id, '-' *40)
 
         elif callback.data == 'maracuja':
-            bot.send_message(callback.message.chat.id, 'Cotação do Maracuja')
+            bot.send_message(callback.message.chat.id, f'Cotação do Maracuja Data: {data_formatada}')
             for i in range(len(maracuja_dados)):
                 mensagem = f"{maracuja_dados['Local'].iloc[i]} : {maracuja_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
             bot.send_message(callback.message.chat.id, '-' *40)
 
         elif callback.data == 'melancia':
-            bot.send_message(callback.message.chat.id, '🍉Cotação da melancia🍉')
+            bot.send_message(callback.message.chat.id, f'🍉Cotação da melancia🍉 Data: {data_formatada}')
             for i in range(len(melancia_dados)):
                 mensagem = f"{melancia_dados['Local'].iloc[i]} : {melancia_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
             bot.send_message(callback.message.chat.id, '-' *40)
 
         elif callback.data == 'pera':
-            bot.send_message(callback.message.chat.id, '🍐 Cotação da pera 🍐')
+            bot.send_message(callback.message.chat.id, f'🍐 Cotação da pera 🍐 Data: {data_formatada}')
             for i in range(len(pera_dados)):
                 mensagem = f"{pera_dados['Local'].iloc[i]} : {pera_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
             bot.send_message(callback.message.chat.id, '-' *40)
 
         elif callback.data == 'tangerina':
-            bot.send_message(callback.message.chat.id, '🍊Cotação da Tangerina🍊')
+            bot.send_message(callback.message.chat.id, f'🍊Cotação da Tangerina🍊 Data: {data_formatada}')
             for i in range(len(tangerina_dados)):
                 mensagem = f"{tangerina_dados['Local'].iloc[i]} : {tangerina_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
             bot.send_message(callback.message.chat.id, '-' *40)
 
         elif callback.data == 'uva':
-            bot.send_message(callback.message.chat.id, '🍇Cotação da uva🍇')
+            bot.send_message(callback.message.chat.id, f'🍇Cotação da uva🍇 Data: {data_formatada}')
             for i in range(len(uva_dados)):
                 mensagem = f"{uva_dados['Local'].iloc[i]} : {uva_dados['Preço'].iloc[i]}"
                 bot.send_message(callback.message.chat.id, mensagem)
